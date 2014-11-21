@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area Converter Guide</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Area Converter Guide">
+  <meta name="author" content="Tianyuan Zhang">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Area Converter Guide</h1>
+    <h2>An Assignment to Data Product</h2>
+    <p>Tianyuan Zhang<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class1" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Motivation</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>United States uses US Customary Unit, which is different from the rest of the world.</li>
+<li>International real estate investor finds it difficult to visualize the side of property.</li>
+<li>This gives reason to develop a web-based converter for the investors.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class1" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>From US Customary Unit to Metrics</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The system for measuring length in the United States customary system is based on the inch, foot, yard, and mile, which are the only four customary length measurements in everyday use. Since July 1, 1959, these have been defined on the basis of 1 yard = 0.9144 meters except for some applications in surveying</li>
+<li>1 mile=5280 ft, 1 yard=3ft...</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class1" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>From Square foot to Square Meter</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>1 foot = 0.3048 meter</li>
+<li>1 square foot = 0.092903 Square meter</li>
+<li>Therefore, area( in square foot) * 0.092903= area(in square meter)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class1" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Mechanism</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">AreaFt&lt;-100000
+AreaMeter&lt;-(AreaFt*0.092903)
+AreaMeter
+</code></pre>
+
+<pre><code>## [1] 9290.3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class1" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Instruction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Access the converter through the link
+<a href="https://ztyrobert.shinyapps.io/Area_Converter/">https://ztyrobert.shinyapps.io/Area_Converter/</a> </li>
+<li>Input the area in text box, and adjust the amount with the trangles.</li>
+<li>Click the &quot;Submit&quot;, and observe the result on the right side of the page. </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Motivation'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='From US Customary Unit to Metrics'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='From Square foot to Square Meter'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Mechanism'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Instruction'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
